@@ -18,8 +18,8 @@ Whether you have five or five thousand servers, Chef lets you manage them all by
 2. The attached delivery.rb file is an example of the configured settings pointing to a xMatters instance.
 3. The following are the ruby lines in the file:
       ``` 
-      notifier['enable']
-      notifier['compliance_user_webhook_url']
+      notifier['enable'] = true
+      notifier['compliance_user_webhook_url'] = 'https://[xmatters instance]/api/integration/1/functions/[UUID]/triggers'    
           
       ```
 4. The following is a sample notification message body:
